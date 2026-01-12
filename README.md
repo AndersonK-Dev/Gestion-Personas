@@ -50,19 +50,15 @@ npm run dev
 
 ---
 
-## 🚀 Acceso y Ejecución
+### 🚀 Acceso y Ejecución
 Una vez iniciados ambos servicios, puedes acceder a la interfaz de usuario en:
 > **URL local:** [http://localhost:5173](http://localhost:5173)
 
----
-
-## 🔐 Credenciales de Acceso
+###4 🔐 Credenciales de Acceso
 El sistema cuenta con un módulo de seguridad basado en **JWT** para proteger las operaciones de escritura (CUD):
 
 * **Usuario:** `admin`
 * **Contraseña:** `password123`
-
----
 
 ## 📈 Capacidades de Ingeniería Aplicadas
 Como **Ingeniero en Ciencias de la Computación**, este proyecto integra las siguientes competencias técnicas:
@@ -71,7 +67,5 @@ Como **Ingeniero en Ciencias de la Computación**, este proyecto integra las sig
 * **Paginación Dinámica:** Optimización de la carga de datos y consultas SQL para mejorar el rendimiento y la experiencia del cliente.
 * **Consumo de APIs Externas:** Integración de servicios externos para enriquecer la funcionalidad y los datos del sistema.
 * **Principios SOLID:** Arquitectura de software mantenible, testeable y alineada a las mejores prácticas de la industria.
-
----
 
 **Desarrollado por Kevin Anderson** — [LinkedIn](https://www.linkedin.com/in/kevinchuga)
