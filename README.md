@@ -35,7 +35,7 @@ La base de datos se puede inicializar mediante dos métodos:
 
 ### 2. Despliegue del Backend
 1. Abre la solución `GestionPersonasSolution.sln` y ejecuta el proyecto `GestionPersonasAPI`.
-2. La API se servirá por defecto en: `https://localhost:7138`.
+2. La API se servirá por defecto en: `https://localhost:7138`.* Puede verificar el puerto en el archivo "launchSettings.json".
 
 ### 3. Despliegue del Frontend
 ```bash
@@ -47,3 +47,31 @@ npm install
 
 # Iniciar servidor de desarrollo
 npm run dev
+
+---
+
+## 🚀 Acceso y Ejecución
+Una vez iniciados ambos servicios, puedes acceder a la interfaz de usuario en:
+> **URL local:** [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🔐 Credenciales de Acceso
+El sistema cuenta con un módulo de seguridad basado en **JWT** para proteger las operaciones de escritura (CUD):
+
+* **Usuario:** `admin`
+* **Contraseña:** `password123`
+
+---
+
+## 📈 Capacidades de Ingeniería Aplicadas
+Como **Ingeniero en Ciencias de la Computación**, este proyecto integra las siguientes competencias técnicas:
+
+* **CRUD Completo:** Gestión estricta de entidades con validaciones robustas del lado del servidor utilizando **.NET 8**.
+* **Paginación Dinámica:** Optimización de la carga de datos y consultas SQL para mejorar el rendimiento y la experiencia del cliente.
+* **Consumo de APIs Externas:** Integración de servicios externos para enriquecer la funcionalidad y los datos del sistema.
+* **Principios SOLID:** Arquitectura de software mantenible, testeable y alineada a las mejores prácticas de la industria.
+
+---
+
+**Desarrollado por Kevin Anderson** — [LinkedIn](https://www.linkedin.com/in/kevinchuga)
