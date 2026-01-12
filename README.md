@@ -1,4 +1,4 @@
-# 👥 PersonasHub: Sistema de Gestión Empresarial
+# 👥 PersonasHub: Sistema de Gestión
 ### **Full-Stack Solution | .NET 8 + React + SQL Server**
 
 ![.NET 8](https://img.shields.io/badge/.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=json-web-tokens&logoColor=white)
