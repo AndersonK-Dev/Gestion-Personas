@@ -1,58 +1,49 @@
-=================================================================
- PROYECTO: GESTIÓN DE PERSONAS (.NET 8 + REACT)
-=================================================================
+# 👥 PersonasHub: Sistema de Gestión Empresarial
+### **Full-Stack Solution | .NET 8 + React + SQL Server**
 
-DESCRIPCIÓN
------------
-Desarrollo para la gestión de personas con operaciones CRUD,
-paginación, seguridad JWT y consumo de API externa.
+![.NET 8](https://img.shields.io/badge/.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 
-REQUISITOS PREVIOS
-------------------
-1. Visual Studio 2022 o VS Code.
-2. .NET SDK 8.0.
-3. Node.js instalado.
-4. SQL Server (LocalDB viene incluido con Visual Studio).
+Este proyecto es una solución integral para la gestión de personal, diseñada bajo estándares de **Clean Architecture** y principios **SOLID**. Implementa un flujo completo de datos, desde la persistencia en SQL Server hasta una interfaz moderna y reactiva construida con tecnologías de vanguardia.
 
-=================================================================
- INSTRUCCIONES DE INSTALACIÓN (¡IMPORTANTE!)
-=================================================================
+---
 
-PASO 1: CONFIGURAR BASE DE DATOS
---------------------------------
-La base de datos NO se incluye en el código, debe generarse en su máquina.
-Tiene dos opciones para hacerlo:
+## 🛠️ Especificaciones Técnicas
 
-OPCIÓN A (Automática con Visual Studio):
-1. Abra el archivo "GestionPersonasSolution.sln" en la carpeta "1_CodigoFuente/Backend".
-2. Vaya a Herramientas > Administrador de paquetes NuGet > Consola.
-3. Ejecute el comando: Update-Database
-   (Esto creará la BD "GestionPersonasDB" en su LocalDB automáticamente).
+* **Backend:** API robusta construida con **.NET 8**, utilizando **Entity Framework Core** para el mapeo de datos y una arquitectura por capas que asegura el desacoplamiento y la escalabilidad.
+* **Frontend:** Aplicación de alto rendimiento desarrollada con **React** y **Vite**, utilizando **Tailwind CSS** para un diseño responsivo y profesional.
+* **Seguridad:** Autenticación y autorización implementadas mediante **JWT (JSON Web Tokens)** para proteger la integridad de los recursos.
+* **Documentación:** Exposición y pruebas de endpoints facilitadas por la integración nativa de **Swagger**.
 
-OPCIÓN B (Manual con Script SQL):
-1. Abra SQL Server Management Studio.
-2. Ejecute el archivo "Script_Creacion_Datos.sql" que está en la carpeta "2. BaseDeDatos".
+---
 
-PASO 2: EJECUTAR EL BACKEND
----------------------------
-1. En Visual Studio, ejecute el proyecto "GestionPersonasAPI".
-2. Asegúrese de que el Backend esté corriendo en el puerto HTTPS (ej. https://localhost:7138).
-   * Puede verificar el puerto en el archivo "launchSettings.json".
+## 🚀 Guía de Instalación
 
-PASO 3: EJECUTAR EL FRONTEND
-----------------------------
-1. Abra una terminal en la carpeta "1. CodigoFuente/Frontend".
-2. Ejecute: npm install
-   (Esto descargará las dependencias necesarias).
-3. Ejecute: npm run dev
-4. Abra el navegador en la URL que indique (usualmente http://localhost:5173).
+### Requisitos Previos
+* **IDE:** Visual Studio 2022 o VS Code.
+* **SDK:** .NET SDK 8.0.
+* **Entorno:** Node.js y SQL Server (LocalDB).
 
-=================================================================
- CREDENCIALES DE ACCESO
-=================================================================
-El sistema está protegido. Para crear, editar o eliminar registros
-debe iniciar sesión con el usuario administrador:
+### 1. Configuración de la Base de Datos
+La base de datos se puede inicializar mediante dos métodos:
 
-Usuario:    admin
-Contraseña: password123
+> [!IMPORTANT]
+> **Opción A (Recomendada):** Entity Framework Migrations.
+> 1. Abre la **Consola de Administración de Paquetes** en Visual Studio.
+> 2. Asegúrate de estar en el proyecto del Backend y ejecuta: `Update-Database`.
 
+**Opción B (Manual):** Ejecuta el archivo `Script_Creacion_Datos.sql` ubicado en la carpeta `/2. BaseDeDatos`.
+
+### 2. Despliegue del Backend
+1. Abre la solución `GestionPersonasSolution.sln` y ejecuta el proyecto `GestionPersonasAPI`.
+2. La API se servirá por defecto en: `https://localhost:7138`.
+
+### 3. Despliegue del Frontend
+```bash
+# Navegar al directorio del frontend
+cd 1. CodigoFuente/Frontend
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
